@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #222, #111); /* Тёмные тона */
+    background: linear-gradient(135deg, #222, #111); 
     color: #eee; 
     line-height: 1.8;
 }
@@ -55,7 +55,7 @@ main {
     height: 150px;
     border: 2px solid #531006;
     box-shadow: 0 4px 1px rgba(203, 8, 8, 0.3);
-    margin-bottom: 20px; /* Отступ снизу */
+    margin-bottom: 20px; 
     position: relative; right: 280px;
     border: 10px solid black; 
     position: relative; 
@@ -67,8 +67,7 @@ main {
     background-color: white;
     opacity: 0.8;
     border-radius: 50%;
-    animation: fall 10s linear infinite; /* Анимация падения */
-    
+    animation: fall 10s linear infinite; 
 }
 
 @keyframes fall {
@@ -78,8 +77,8 @@ main {
 
 
 #about > div { 
-    text-align: center; /* Текст по центру */
-    width: 100%; /* Занимает всю ширину */
+    text-align: center; 
+    width: 100%;
     
 }
 
@@ -145,6 +144,14 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+    align-items: center; 
+    
+}
+
+footer p2 {
+    margin: 0;
+    font-size: 0.8rem;
+    align-items: center; 
     
 }
 
