@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hello, brother!</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <h3>Штирлиц всегда был на два шага впереди</h3>
+            <img src="your-photo.jpg" alt="Мое фото" width="150"> 
+            <p>Hi, i am Ultimate.</p>
+            <ul>
+                <li><strong>Дата рождения:</strong> декабрь седьмого</li>
+                <li><strong>Место жительства:</strong> Париж, Эйфелева башня</li>
+                <li><strong>Работа:</strong> Программист от бога</li>
+                <li><strong>Контакты:</strong> номерок блатной три семерочки</li>
+                <li><strong>Образование:</strong> Самоучка</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Алексей Индастриз. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function createSnowflakes(numSnowflakes) {
+          const img = document.getElementById('about').querySelector('img');
+          for (let i = 0; i < numSnowflakes; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            const size = Math.random() * 5 + 2;
+            const rotation = Math.random() * 360;
+            snowflake.style.width = `${size}px`;
+            snowflake.style.height = `${size}px`;
+            snowflake.style.transform = `rotate(${rotation}deg)`;
+            snowflake.style.left = `${Math.random() * 100}%`;
+            snowflake.style.top = `-${size}px`;
+            img.appendChild(snowflake);
+          }
+        }
+        createSnowflakes(20);
+    </script>
+</body>
+</html>
